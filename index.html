@@ -683,6 +683,18 @@
                 </div>
             </div>
             <div class="skill-category">
+                <div class="skill-category-icon">&#128279;</div>
+                <h3>APIs</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">REST APIs</span>
+                    <span class="skill-tag">GraphQL</span>
+                    <span class="skill-tag">Django REST Framework</span>
+                    <span class="skill-tag">API Versioning</span>
+                    <span class="skill-tag">Request/Response Validation</span>
+                    <span class="skill-tag">Structured Error Handling</span>
+                </div>
+            </div>
+            <div class="skill-category">
                 <div class="skill-category-icon">&#9881;</div>
                 <h3>Frameworks</h3>
                 <div class="skill-tags">
@@ -690,6 +702,8 @@
                     <span class="skill-tag">Django REST Framework</span>
                     <span class="skill-tag">Django Channels</span>
                     <span class="skill-tag">Flask</span>
+                    <span class="skill-tag">Playwright</span>
+                    <span class="skill-tag">RPA</span>
                 </div>
             </div>
             <div class="skill-category">
@@ -700,6 +714,33 @@
                     <span class="skill-tag">MySQL</span>
                     <span class="skill-tag">SQLite</span>
                     <span class="skill-tag">Redis</span>
+                    <span class="skill-tag">Schema Design</span>
+                    <span class="skill-tag">Migrations</span>
+                    <span class="skill-tag">Table Partitioning</span>
+                    <span class="skill-tag">Query Optimization</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-icon">&#128737;</div>
+                <h3>Security</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">JWT Authentication</span>
+                    <span class="skill-tag">2FA/OTP</span>
+                    <span class="skill-tag">AES Request/Response Encryption</span>
+                    <span class="skill-tag">bcrypt Hashing</span>
+                    <span class="skill-tag">Role-Based Access Control</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-icon">&#129504;</div>
+                <h3>AI Tooling</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Cursor</span>
+                    <span class="skill-tag">GitHub Copilot</span>
+                    <span class="skill-tag">Claude</span>
+                    <span class="skill-tag">ChatGPT</span>
+                    <span class="skill-tag">AI-Assisted Development</span>
+                    <span class="skill-tag">Model Evaluation & Feedback</span>
                 </div>
             </div>
             <div class="skill-category">
@@ -713,16 +754,18 @@
                     <span class="skill-tag">AWS</span>
                     <span class="skill-tag">Nginx</span>
                     <span class="skill-tag">Daphne (ASGI)</span>
+                    <span class="skill-tag">Slack</span>
+                    <span class="skill-tag">Agile Remote Workflows</span>
                 </div>
             </div>
             <div class="skill-category">
                 <div class="skill-category-icon">&#128274;</div>
                 <h3>Specializations</h3>
                 <div class="skill-tags">
-                    <span class="skill-tag">REST APIs</span>
                     <span class="skill-tag">Multi-Tenant Architecture</span>
-                    <span class="skill-tag">EDI Processing</span>
+                    <span class="skill-tag">EDI Processing (X12/EDIFACT)</span>
                     <span class="skill-tag">WebSockets</span>
+                    <span class="skill-tag">Real-Time Systems</span>
                     <span class="skill-tag">JWT Auth</span>
                     <span class="skill-tag">Two-Factor Auth</span>
                 </div>
@@ -754,18 +797,26 @@
                     <span class="timeline-company">Ecom-Specialist</span>
                     <span class="timeline-date">Nov 2023 - Present</span>
                 </div>
-                <div class="timeline-role">Python Developer</div>
+                <div class="timeline-role">Python Developer &nbsp;&middot;&nbsp; Key Projects: Prism, WebEDI, EDI Portal</div>
+                <p style="font-weight:600; color:#1a1a1a; font-size:1rem; margin:0.6rem 0 0.5rem;">Prism &mdash; Multi-Tenant EDI Transaction Platform</p>
                 <ul class="timeline-bullets">
-                    <li>Architected a multi-tenant, multi-database system supporting 16+ isolated company databases with custom tenant middleware and dynamic database routing.</li>
-                    <li>Built comprehensive EDI document processing pipelines handling multiple transaction types (850, 810, 855, 856, 997) including Purchase Orders, Invoices, and Shipment Notices.</li>
-                    <li>Implemented PostgreSQL table partitioning (range-based on timestamps) ensuring high-performance queries across millions of records.</li>
-                    <li>Developed real-time WebSocket communication using Django Channels and Daphne (ASGI) for a built-in ChatBot module.</li>
-                    <li>Created an analytics and reporting engine with multi-granularity transaction aggregations and PDF/CSV export capabilities.</li>
-                    <li>Designed JWT-based authentication with two-factor OTP verification, AES encryption, and role-based access control.</li>
-                    <li>Built an SLA management system with milestone tracking and automated cron-based monitoring.</li>
-                    <li>Developed advanced search and filtering APIs with keyword, date range, and trading partner filtering.</li>
-                    <li>Implemented resumable file upload with chunk processing and SeaweedFS integration.</li>
-                    <li>Set up automated scheduled tasks for attachment processing, status updates, and data maintenance.</li>
+                    <li>Architected a multi-tenant, multi-database system supporting 16+ isolated company databases with custom tenant middleware, dynamic database routing, and thread-local per-request tenant context.</li>
+                    <li>Planned and executed database migrations and schema changes across tenant databases; implemented PostgreSQL range-based table partitioning on the Transaction model, tuning query performance across millions of records.</li>
+                    <li>Built EDI document processing pipelines (850, 810, 855, 856, 997) with rigorous data validation and structured error handling for Purchase Orders, Invoices, Acknowledgements, and Shipment Notices.</li>
+                    <li>Designed API security end to end: JWT authentication with 2FA OTP verification, AES request/response encryption, and role-based access control; implemented resumable chunked uploads to SeaweedFS distributed storage.</li>
+                    <li>Developed a real-time WebSocket ChatBot (Django Channels + Daphne ASGI) with session management and token-based authentication, plus an integrated support ticketing module.</li>
+                    <li>Built an analytics/reporting engine (hourly to quarterly aggregations, trading partner performance tracking, PDF/CSV export) and an SLA system with milestone tracking and automated failed-transaction status updates.</li>
+                </ul>
+                <p style="font-weight:600; color:#1a1a1a; font-size:1rem; margin:1rem 0 0.5rem;">WebEDI &mdash; Trading Partner Web EDI Portal</p>
+                <ul class="timeline-bullets">
+                    <li>Built and maintained 15+ Django apps covering order management, invoicing, shipping, remittance/payment, credit-debit, pricing &amp; sales catalog, inventory inquiry, planning schedules, and partner onboarding.</li>
+                    <li>Developed a reporting module supporting saved/custom reports, shipment registry, and per-transaction data exports; built dashboards aggregating order-response and transaction-status data across trading partners.</li>
+                    <li>Implemented real-time bell notifications, document tracking, and PDF/EDI parsing management for inbound transactions.</li>
+                </ul>
+                <p style="font-weight:600; color:#1a1a1a; font-size:1rem; margin:1rem 0 0.5rem;">EDI Portal &mdash; X12/EDIFACT Parsing REST API</p>
+                <ul class="timeline-bullets">
+                    <li>Built a Django REST API converting raw X12/EDIFACT EDI content into structured, human-readable JSON with agency/version-aware segment and element description lookups.</li>
+                    <li>Implemented JWT authentication with OTP/2FA verification, AES payload encryption/decryption, bcrypt password hashing, and forgot-password flows with robust input validation and error responses.</li>
                 </ul>
             </div>
             <div class="timeline-item">
@@ -777,7 +828,7 @@
                 <div class="timeline-role">Python Developer</div>
                 <ul class="timeline-bullets">
                     <li>Developed and maintained web applications using Python, Django, and Django REST Framework.</li>
-                    <li>Built RESTful APIs for frontend consumption, integrating with PostgreSQL and MySQL databases.</li>
+                    <li>Built RESTful and GraphQL APIs for frontend consumption, integrating with PostgreSQL and MySQL databases.</li>
                     <li>Collaborated with cross-functional teams including frontend developers, designers, and QA engineers.</li>
                     <li>Participated in code reviews, sprint planning, and agile ceremonies for high code quality.</li>
                     <li>Implemented authentication systems, user management modules, and third-party API integrations.</li>
